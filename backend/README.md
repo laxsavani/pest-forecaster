@@ -1,6 +1,7 @@
 
 # Tools & Technologies
 Frontend (React + Vite + Tailwind)
+
 Backend (FastAPI + SQLite + scikit-learn)
 
 # How to run (local)
