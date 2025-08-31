@@ -9,10 +9,10 @@ MODEL_PATH = os.path.join(os.path.dirname(__file__), "pest_lr.joblib")
 FEATURES = ["temperature","humidity","rainfall","soil_moisture","wind_speed"]
 
 def _risk_level(score: float) -> str:
-    if score >= 0.75: return "Severe"
-    if score >= 0.5: return "High"
-    if score >= 0.25: return "Moderate"
-    return "Low"
+    if score >= 0.75: return "Severe (ગંભીર)"
+    if score >= 0.5: return "High (વધુ)"
+    if score >= 0.25: return "Moderate (મધ્યમ)"
+    return "Low (ઓછું)"
 
 class PestRiskModel:
     def __init__(self):
