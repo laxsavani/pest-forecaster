@@ -1,17 +1,16 @@
+# Pest Infestation Forecaster
 
-# Tools & Technologies
-Frontend (React + Vite + Tailwind)
+## Tools & Technologies
+Frontend (React + Vite + Tailwind) Backend (FastAPI + SQLite + scikit-learn)
 
-Backend (FastAPI + SQLite + scikit-learn)
+## How to run (local)
 
-# How to run (local)
-1) Backend
-
+### Backend
 Unzip → open backend/ in a terminal.
 
 (Recommended) Create venv:
 
-Windows: python -m venv .venv && .venv\\Scripts\\activate
+Windows: python -m venv .venv && .venv\Scripts\activate
 
 macOS/Linux: python -m venv .venv && source .venv/bin/activate
 
@@ -21,8 +20,7 @@ Start API: uvicorn app.main:app --reload
 
 API docs: http://localhost:8000/docs
 
-2) Frontend
-
+### Frontend
 Open a new terminal in frontend/.
 
 Install: npm install
@@ -33,7 +31,7 @@ App: http://localhost:5173
 
 (The frontend points to http://localhost:8000 via .env. Change if needed.)
 
-# Key features
+## Key features
 Submit field reports (crop, pest, location, weather).
 
 Predict risk instantly using a baseline ML model (or heuristic before training).
